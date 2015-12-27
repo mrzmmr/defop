@@ -1,0 +1,20 @@
+{
+  "name": "opop",
+  "version": "1.0.0",
+  "description": "A helper function to work with default options",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "babel --source-maps --out-dir dst src",
+    "test": "tap --cov -R spec ./dst/tst/index.js",
+    "clean": "rm -rf dst"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.3.13",
+    "source-map-support": "^0.4.0",
+    "tap": "^2.3.5"
+  }
+}
