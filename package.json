@@ -1,6 +1,6 @@
 {
   "name": "opop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A helper function to work with default options",
   "main": "index.js",
   "scripts": {
