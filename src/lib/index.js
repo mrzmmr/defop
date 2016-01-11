@@ -1,3 +1,5 @@
+module.exports = defop
+
 /*
  * Callback utility
  */
@@ -14,5 +16,3 @@ export function defop(options, defaults={}, callback=callop) {
     return previous
   }, options))
 }
-
-export default defop
