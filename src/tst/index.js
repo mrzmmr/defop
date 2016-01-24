@@ -1,5 +1,5 @@
-import * as tap from 'tap'
-var defop = require('../lib/index')
+import tap from 'tap'
+import defop from '../lib/index'
 
 const OPTIONS = {one: 1}
 
