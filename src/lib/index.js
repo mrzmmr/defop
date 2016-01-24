@@ -23,8 +23,8 @@ export function callop(error, value) {
 
 /**
  * @param {Object} options
- * @param {Object} [defaults={}] -
- * @param {Function} [callback=callop]
+ * @param {Object} [defaults={}] - Object to merge
+ * @param {Function} [callback={Function}] - Defaults to function that returns value or error
  * @return {Object}
  *
  * @example
@@ -37,7 +37,7 @@ export function callop(error, value) {
  *   // result => {"key1": 1, "key2": 2, "key3": 3}
  * })
  */
-export default function defop(options, defaults={}, callback=callop) {
+export default function defop(options, defaults={}, callback=function (error, value) { return error ? error: value }) {
   return callback(null, Object.keys(defaults).reduce((previous, current) => {
     previous[current] = current in previous
       ? previous[current]
