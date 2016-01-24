@@ -1,0 +1,16 @@
+machine:
+  environment:
+    COVERALLS_REPO_TOKEN: iPQjoVb60SgrDRnSsjl85FyHa6Yazcnj7
+    COVERALLS_PARALLEL: true
+
+notify:
+  webhooks:
+    - url: https://coveralls.io/webhook?repo_token=iPQjoVb60SgrDRnSsjl85FyHa6Yazcnj7
+
+test:
+  override:
+    - nvm use 0.10 && npm t
+    - nvm use 0.11 && npm t
+    - nvm use 0.12 && npm t
+    - nvm use 4.0 && npm t
+    - nvm use 5.0 && npm t
