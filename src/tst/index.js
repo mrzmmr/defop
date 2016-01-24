@@ -1,23 +1,20 @@
 import 'source-map-support'
 
 import * as tap from 'tap'
-import * as lib from '../lib/index'
+// import * as lib from '../lib/index'
+var defop = require('../lib/index')
 
-tap.test('lib#defop', (defop) => {
  const OPTIONS = {one: 1}
 
-  defop.test('w/ callback', (assert) => {
-    lib.defop({two: 2}, OPTIONS, (error, results) => {
-      assert.same(results, {one: 1, two: 2})
-    })
-    assert.end()
-  })
-     
-  defop.test('w/o callback', (assert) => {
-    let results = lib.defop({two: 2}, OPTIONS)
+tap.test('w/ callback', (assert) => {
+  defop({two: 2}, OPTIONS, (error, results) => {
     assert.same(results, {one: 1, two: 2})
-    assert.end()
   })
-
-  defop.end()
+  assert.end()
+})
+     
+tap.test('w/o callback', (assert) => {
+  let results = defop({two: 2}, OPTIONS)
+  assert.same(results, {one: 1, two: 2})
+  assert.end()
 })

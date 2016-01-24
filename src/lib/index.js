@@ -3,11 +3,11 @@ import 'source-map-support'
 /*
  * Callback utility
  */
-export function callop(error, value) {
+function callop(error, value) {
   return error ? error : value
 }
 
-export function defop(options, defaults={}, callback=callop) {
+module.exports = function defop(options, defaults={}, callback=callop) {
   return callback(null, Object.keys(defaults).reduce((previous, current) => {
     previous[current] = current in previous
       ? previous[current]
@@ -16,5 +16,3 @@ export function defop(options, defaults={}, callback=callop) {
     return previous
   }, options))
 }
-
-export default defop
