@@ -1,4 +1,4 @@
-import 'source-map-support'
+module.exports = defop
 
 /*
  * Callback utility
