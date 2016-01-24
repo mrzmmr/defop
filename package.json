@@ -1,16 +1,16 @@
 {
   "name": "defop",
-  "version": "1.1.14",
+  "version": "1.1.15",
   "main": "dst/lib/index.js",
   "description": "A helper function to merge two objects",
   "scripts": {
     "lint": "eslint src/lib",
-    "pretest": "npm run build",
     "prepublish": "npm run build",
     "build": "babel --out-dir dst src",
-    "test": "tap --cov -R spec ./dst/tst/index.js",
-    "all": "npm run lint; npm run test; npm run readme",
-    "readme": "documentation readme --readme-file Readme.md -s \".\""
+    "all": "npm run test; npm run readme",
+    "pretest": "npm run lint; npm run build",
+    "test": "tap --cov -R spec dst/tst/index.js",
+    "readme": "mv .babelrc b; documentation readme --readme-file Readme.md -s \".\"; mv b .babelrc"
   },
   "keywords": [
     "es6",
@@ -26,9 +26,13 @@
   "author": "mrzmmr",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.4.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.4.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.4.5",
+    "babel-plugin-transform-es2015-parameters": "^6.4.5",
     "documentation": "github:documentationjs/documentation",
     "eslint": "^1.10.3",
-    "babel": "5.x.x",
     "tap": "^5.1.1"
   }
 }
