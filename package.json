@@ -28,7 +28,7 @@
   "author": "mrzmmr",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.4.5",
+    "babel-cli": ">=6.4.5",
     "babel-plugin-transform-es2015-arrow-functions": "^6.4.0",
     "babel-plugin-transform-es2015-block-scoping": "^6.4.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.4.5",
