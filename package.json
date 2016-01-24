@@ -1,12 +1,13 @@
 {
   "name": "defop",
-  "version": "1.1.6",
+  "version": "1.1.9",
   "description": "A helper function to work with es2015 default options",
   "main": "dst/lib/index.js",
   "scripts": {
     "build": "babel --source-maps --out-dir dst src",
     "test": "tap --cov -R spec ./dst/tst/index.js",
     "pretest": "npm run build",
+    "prepublish": "npm run build",
     "lint": "eslint src/lib",
     "clean": "rm -rf dst"
   },
