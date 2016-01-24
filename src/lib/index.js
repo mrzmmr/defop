@@ -1,4 +1,8 @@
 /**
+ * [![AppVeyor branch](https://img.shields.io/appveyor/ci/mrzmmr/defop/master.svg?style=flat-square)]()
+ * [![CircleCI branch](https://img.shields.io/circleci/project/mrzmmr/defop/master.svg?style=flat-square)]()
+ * [![Coveralls branch](https://img.shields.io/coveralls/mrzmmr/defop/master.svg?style=flat-square)]()
+ *
  * ## install
  *
  * ```sh
