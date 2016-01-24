@@ -18,11 +18,6 @@ npm install [ --save ] defop
 import defop from 'defop'
 ```
 
-**Parameters**
-
--   `error`  
--   `value`  
-
 **Meta**
 
 -   **version**: 1.1.15
