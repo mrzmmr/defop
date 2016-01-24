@@ -7,9 +7,6 @@ notify:
   webhooks:
     - url: https://coveralls.io/webhook?repo_token=iPQjoVb60SgrDRnSsjl85FyHa6Yazcnj7
 
-dependencies:
-  override:
-    - npm i
 
 test:
   override:
