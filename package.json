@@ -11,7 +11,7 @@
     "pretest": "npm run lint; npm run build",
     "test": "tap --cov -R spec dst/tst/index.js",
     "readme": "mv .babelrc b; documentation readme src/lib/index.js --readme-file Readme.md -s \".\"; mv b .babelrc",
-    "testnix": "npm run cleannix && npm i && npm t",
+    "testnix": "cat package.json && npm run cleannix && npm i && npm t",
     "cleannix": "rm -rf node_modules dst .nyc_output"
   },
   "keywords": [
