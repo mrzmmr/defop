@@ -16,7 +16,7 @@ import defop from 'defop'
 
 **Meta**
 
--   **version**: 1.1.13
+-   **version**: 1.1.14
 -   **author**: mrzmmr
 
 ## defop

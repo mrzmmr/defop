@@ -1,6 +1,6 @@
 {
   "name": "defop",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "main": "dst/lib/index.js",
   "description": "A helper function to merge two objects",
   "scripts": {
